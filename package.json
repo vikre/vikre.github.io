@@ -2,7 +2,7 @@
   "name": "homepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vikre.github.io/homepage",
+  "homepage": "http://vikre.github.io/",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
