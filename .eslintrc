@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "parser": "babel-eslint", // to deal with experimental features like => in class (http://stackoverflow.com/questions/34966438/eslint-in-class-with-fat-arrow-using-airbnb-rules)
+  // Overriding Airbnb rules (see https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base/rules)
+  "rules": {
+    "max-len": [2, 200, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false
+    }],
+    "linebreak-style": 0,
+    "react/jsx-first-prop-new-line": [
+      "error",
+      "multiline-multiprop"
+    ],
+    "react/prefer-stateless-function": 1,
+    "react/no-unused-prop-types": 0,
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0 // We don't care about these warnings right now
+  },
+  "env": {
+    "browser": true
+  }
+}
