@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Divider, Flag, Header } from 'semantic-ui-react';
+import { List, Divider, Flag, Header, Icon, Label } from 'semantic-ui-react';
 import './App.css';
 
 const ContactInfo = () => (
@@ -18,16 +18,37 @@ const ContactInfo = () => (
       <List verticalAlign="middle" >
         <List.Item>
           <Flag name="no" />
-          {'Spoken: fluent, written: excellent'}
+          <Label circular>
+            <Icon name="talk" />
+            Fluent
+          </Label>
+          <Label circular>
+            <Icon name="write" />
+            Excellent
+          </Label>
         </List.Item>
         <List.Item>
           <Flag name="gb" />
           <Flag name="us" />
-          {'Spoken: excellent, written: excellent'}
+          <Label circular>
+            <Icon name="talk" />
+            Excellent
+          </Label>
+          <Label circular>
+            <Icon name="write" />
+            Excellent
+          </Label>
         </List.Item>
         <List.Item>
           <Flag name="se" />
-          {'Spoken: avarage, written: avarage'}
+          <Label circular>
+            <Icon name="talk" />
+            Avarage
+          </Label>
+          <Label circular>
+            <Icon name="write" />
+            Avarage
+          </Label>
         </List.Item>
       </List>
     </List.Item>
@@ -41,7 +62,8 @@ const Profile = () => (
     <Divider hidden />
     <ContactInfo />
     <Divider hidden />
-    <span><i>References are provided on request</i></span>
+    <span><i>References are provided on request</i></span><br />
+    <Label attached="bottom left">&copy; 2017 Linn Vikre</Label>
   </nav>
 );
 
