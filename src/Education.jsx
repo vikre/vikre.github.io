@@ -28,10 +28,10 @@ const Education = () => (
       extra={'Master thesis: Online News Detection on Twitter'}
     />
     <EducationItem
-      header={'Dønski Upper secondary school'}
+      header={'Dønski Videregående Skole'}
       link={'http://donski.no/'}
       meta={'2006 - 2009'}
-      description={'Alpint skiing'}
+      description={'Alpine skiing'}
     />
   </Item.Group>
 );
