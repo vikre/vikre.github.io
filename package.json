@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "http://vikre.github.io/",
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.0.17",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.71.4"
+    "semantic-ui-react": "^0.77.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,9 +18,9 @@
     "deploy": "react-scripts build && gh-pages -b master -d build"
   },
   "devDependencies": {
-    "eslint": "^4.4.1",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-react": "^7.2.0",
-    "gh-pages": "^1.0.0"
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-react": "^7.5.1",
+    "gh-pages": "^1.1.0"
   }
 }

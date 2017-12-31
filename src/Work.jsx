@@ -31,7 +31,7 @@ const Work = () => (
       meta={'2016 - now'}
       metadescription={'Consultant / Software developer / Team lead'}
       description={'Maintain and develop new features for Enturs sales- and ticket system.'}
-      labels={['javascript', 'react', 'CSS', 'Java', 'Hibernate', 'Ruby on rails', 'docker', 'Spring', 'npm', 'gradle', 'maven', 'git', 'oracle', 'postgreSQL']}
+      labels={['Javascript', 'React', 'CSS', 'Semantic', 'Java', 'Hibernate', 'Ruby on rails', 'Docker', 'Spring', 'npm', 'gradle', 'maven', 'git', 'oracle', 'postgreSQL', 'Google cloud']}
     />
     <WorkItem
       header={'Knowit AS'}

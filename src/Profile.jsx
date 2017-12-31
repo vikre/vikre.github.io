@@ -63,7 +63,7 @@ const Profile = () => (
     <ContactInfo />
     <Divider hidden />
     <span><i>References are provided on request</i></span><br />
-    <Label attached="bottom left">&copy; 2017 Linn Vikre</Label>
+    <Label attached="bottom left">&copy; 2017-2018 Linn Vikre</Label>
   </nav>
 );
 
