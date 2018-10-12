@@ -26,7 +26,7 @@ const Work = () => (
   <Item.Group>
     <h2><span>Work</span></h2>
     <WorkItem
-      header={'Knowit AS'}
+      header={'Knowit Objectnet AS'}
       link={'https://www.knowit.no/'}
       meta={'2016 - now'}
       metadescription={'Consultant / Software developer / Team lead'}
@@ -34,7 +34,7 @@ const Work = () => (
       labels={['Javascript', 'React', 'CSS', 'Semantic', 'Java', 'Hibernate', 'Ruby on rails', 'Docker', 'Spring', 'npm', 'gradle', 'maven', 'git', 'oracle', 'postgreSQL', 'Google cloud']}
     />
     <WorkItem
-      header={'Knowit AS'}
+      header={'Knowit Objectnet AS'}
       link={'https://www.knowit.no/'}
       meta={'2015 - 2016'}
       metadescription={'Consultant / Software developer'}

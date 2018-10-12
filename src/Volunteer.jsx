@@ -33,7 +33,7 @@ const Volunteer = () => (
         { title: 'Head (2014-2015)', description: 'Worked closely with the rest of the team to organize and run the organization. Also had the responsibility for HES (Health Environmental Safety)' },
         { title: 'Deputy head (2013-2014)', description: 'Worked closely with the rest of the team to organize and run the organization. Mostly communication and representation' },
         { title: 'Head of the academic and courses commitee (2012 -2013)',
-          description: 'Managing the team working with arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology)' },
+          description: 'Managing the team working with arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology' },
         { title: 'Member of the academic and courses commitee (2011 - 2015)',
           description: 'Arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology' },
       ]}
