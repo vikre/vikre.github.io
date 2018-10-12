@@ -42,7 +42,7 @@ const Work = () => (
       labels={['javascript', 'CSS', 'Java', 'Hibernate', 'Spring', 'maven', 'git', 'oracle']}
     />
     <WorkItem
-      header={'Knowit AS'}
+      header={'Knowit Objectnet AS'}
       link={'https://www.knowit.no/'}
       meta={'2014'}
       metadescription={'Summer intern - Developer'}
