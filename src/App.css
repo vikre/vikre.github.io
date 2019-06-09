@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-
 section {
   flex: 1 1 auto;
   overflow: auto;
@@ -45,6 +39,69 @@ h2 span {
   height: 100vh;
 }
 
+/* print styles */
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+
+  nav {
+    max-width: 100%;
+    flex: none;
+    padding-bottom: 30px;
+  }
+
+  .ui.items.item-margin-left {
+    margin-left: 25px !important;
+    break-before: auto;
+  }
+
+  .ui.tag.labels {
+    max-width: 700px;
+  }
+
+  .ui.blue.tag.label::before,
+  ::after {
+    display: none;
+    width: auto;
+  }
+
+  .wrapper {
+    display: block;
+    height: 100vh;
+  }
+  .ui.list.contact {
+    display: grid;
+    grid-template-columns: 3fr 3fr 5fr;
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+  }
+
+  .item.links {
+    width: 100%;
+  }
+
+  .item.languages {
+    width: 100%;
+  }
+
+  .talk.icon,
+  .write.icon {
+    display: none;
+  }
+
+  .ui.bottom.left.attached.label {
+    display: none;
+  }
+
+  .page-break {
+    page-break-before: always;
+    break-before: always;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .wrapper {
     flex-direction: column;
@@ -56,7 +113,7 @@ h2 span {
     max-height: 110px;
     overflow: hidden;
   }
-  .ui[class*="bottom left attached"].label{
+  .ui[class*='bottom left attached'].label {
     z-index: 1;
     width: 98%;
   }
@@ -65,9 +122,4 @@ h2 span {
     order: 1 !important;
     flex-wrap: wrap;
   }
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

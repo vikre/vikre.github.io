@@ -3,21 +3,41 @@ import { List, Divider, Flag, Header, Icon, Label } from 'semantic-ui-react';
 import './App.css';
 
 const ContactInfo = () => (
-  <List>
-    <List.Item content="Oslo, Norway" icon="marker" />
-    <List.Item content="(+47) 970 43 924" icon="phone" />
-    <List.Item content="vikre.90@gmail.com" icon="mail" />
+  <List className="contact">
     <List.Item>
-      <List animated link verticalAlign="middle" >
-        <List.Item as="a" content="Twitter" icon="twitter" href="https://twitter.com/vikrel" />
-        <List.Item as="a" content="Github" icon="github" href="https://github.com/vikre" />
-        <List.Item as="a" content="Linkedin" icon="linkedin" href="http://www.linkedin.com/in/vikre" />
+      <List verticalAlign="middle">
+        <List.Item content="Oslo, Norway" icon="marker" />
+        <List.Item content="(+47) 970 43 924" icon="phone" />
+        <List.Item content="vikre.90@gmail.com" icon="mail" />
       </List>
     </List.Item>
-    <List.Item>
-      <List verticalAlign="middle" >
+    <List.Item className="links">
+      <List animated link verticalAlign="middle">
+        <List.Item
+          as="a"
+          content="Twitter"
+          icon="twitter"
+          href="https://twitter.com/vikrel"
+        />
+        <List.Item
+          as="a"
+          content="Github"
+          icon="github"
+          href="https://github.com/vikre"
+        />
+        <List.Item
+          as="a"
+          content="Linkedin"
+          icon="linkedin"
+          href="http://www.linkedin.com/in/vikre"
+        />
+      </List>
+    </List.Item>
+    <List.Item className="languages">
+      <List verticalAlign="middle">
         <List.Item>
           <Flag name="no" />
+          {'Norwegian'}
           <Label circular>
             <Icon name="talk" />
             Fluent
@@ -28,8 +48,8 @@ const ContactInfo = () => (
           </Label>
         </List.Item>
         <List.Item>
-          <Flag name="gb" />
           <Flag name="us" />
+          {'English'}
           <Label circular>
             <Icon name="talk" />
             Excellent
@@ -41,6 +61,7 @@ const ContactInfo = () => (
         </List.Item>
         <List.Item>
           <Flag name="se" />
+          {'Swedish'}
           <Label circular>
             <Icon name="talk" />
             Avarage
@@ -62,8 +83,11 @@ const Profile = () => (
     <Divider hidden />
     <ContactInfo />
     <Divider hidden />
-    <span><i>References are provided on request</i></span><br />
-    <Label attached="bottom left">&copy; 2018 Linn Vikre</Label>
+    <span>
+      <i>References are provided on request</i>
+    </span>
+    <br />
+    <Label attached="bottom left">&copy; 2019 Linn Vikre</Label>
   </nav>
 );
 
