@@ -39,7 +39,6 @@ h2 span {
   height: 100vh;
 }
 
-/* print styles */
 @media print {
   body {
     margin: 0;
