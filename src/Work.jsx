@@ -51,6 +51,7 @@ const Work = () => (
         'React',
         'Next.js',
         'express.js',
+        'node.js',
         'jest',
         'Cypress',
         'Styled components',
@@ -70,7 +71,10 @@ const Work = () => (
         'git',
         'postgreSQL',
         'AWS',
-        'Kong'
+        'Kong',
+        'google assistant',
+        'dialog flow',
+        'serverless - AWS Lambda'
       ]}
     />
     <WorkItem
@@ -79,7 +83,7 @@ const Work = () => (
       meta={'2016 - December 2018 & June 2019 - now'}
       metadescription={'Consultant / Team leader / Software developer'}
       description={
-        'Maintain and develop new features for Enturs sales- and ticket system.'
+        'Maintain and develop new features for Enturs sales- and ticket system. Team lead for a team of aprox. 10 developers, and sat as both a backend- and frontend developer.'
       }
       labels={[
         'Javascript',
@@ -115,7 +119,7 @@ const Work = () => (
       meta={'2015 - 2016'}
       metadescription={'Consultant / Software developer'}
       description={
-        'Maintain and develop new features for the Norwegian Rail Roads (NSB) sales- and ticket system.'
+        'Maintain and develop new features for the Norwegian Rail Roads (NSB) sales- and ticket system. Linn sat mainly as a backend developer on the project. One of the responsibilities were to implement the integration between the sales- and ticketing system and third party payment APIs as Vipps, MobilePay and Mcash so that the NSB-app could have they as payment methods.'
       }
       labels={[
         'Javascript',

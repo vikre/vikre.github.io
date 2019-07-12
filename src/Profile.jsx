@@ -44,7 +44,7 @@ const ContactInfo = () => (
           </Label>
           <Label circular>
             <Icon name="write" />
-            Excellent
+            Fluent
           </Label>
         </List.Item>
         <List.Item>
@@ -64,11 +64,11 @@ const ContactInfo = () => (
           {'Swedish'}
           <Label circular>
             <Icon name="talk" />
-            Avarage
+            Average
           </Label>
           <Label circular>
             <Icon name="write" />
-            Avarage
+            Average
           </Label>
         </List.Item>
       </List>
