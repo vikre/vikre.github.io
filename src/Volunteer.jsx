@@ -2,8 +2,8 @@ import React from 'react';
 import { Item, List } from 'semantic-ui-react';
 import './App.css';
 
-const VolunteerItem = ({ header, link, meta, subItems }) => (
-  <Item className="ui items item-margin-left">
+const VolunteerItem = ({ header, link, meta, subItems, className }) => (
+  <Item className={`ui items item-margin-left ${className ? className : ''}`}>
     <Item.Content>
       <Item.Header as="a" href={link}>
         {header}
@@ -71,6 +71,7 @@ const Volunteer = () => (
             'JavaZone is organized by javaBin, the Norwegian Java User Group. The goal is to organize a community-driven conference for Java developers where they can learn new things, share knowledge, and socialize.'
         }
       ]}
+      className="page-break"
     />
   </Item.Group>
 );

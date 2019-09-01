@@ -8,9 +8,10 @@ const WorkItem = ({
   meta,
   metadescription,
   description,
-  labels
+  labels,
+  classname
 }) => (
-  <Item className="ui items item-margin-left">
+  <Item className={`ui items item-margin-left ${classname ? classname : ''}`}>
     <Item.Content>
       <Item.Header as="a" href={link}>
         {header}
@@ -22,10 +23,10 @@ const WorkItem = ({
       </Item.Meta>
       <Item.Description>{description}</Item.Description>
       <Item.Extra>
-        <Label.Group tag>
+        <Label.Group>
           {labels &&
             labels.map((label, index) => (
-              <Label tag key={index} content={label} color="blue" />
+              <Label key={index} content={label} color="teal" />
             ))}
         </Label.Group>
       </Item.Extra>
@@ -42,9 +43,14 @@ const Work = () => (
       header={'Knowit Objectnet AS'}
       link={'https://www.knowit.no/'}
       meta={'2018 - now'}
-      metadescription={'Consultant / Software developer'}
+      metadescription={'Consultant / Team lead / Software developer'}
       description={
-        'Global digital library (GDL) - a cooperation project between Norad and USAID with NDLA for developing a platform to freely provide reading material in a large number of languages for children.'
+        <span>
+          <a href="https://digitallibrary.io/">Global digital library (GDL)</a>{' '}
+          - a cooperation project between Norad and USAID with NDLA for
+          developing a platform to freely provide reading material in a large
+          number of languages for children.
+        </span>
       }
       labels={[
         'Javascript',
@@ -74,27 +80,33 @@ const Work = () => (
         'Kong',
         'google assistant',
         'dialog flow',
-        'serverless - AWS Lambda'
+        'AWS Lambda',
+        'Terraform'
       ]}
     />
     <WorkItem
       header={'Knowit Objectnet AS'}
       link={'https://www.knowit.no/'}
       meta={'2016 - December 2018 & June 2019 - now'}
-      metadescription={'Consultant / Team leader / Software developer'}
+      metadescription={'Consultant / Team lead / Software developer'}
       description={
-        'Maintain and develop new features for Enturs sales- and ticket system. Team lead for a team of aprox. 10 developers, and sat as both a backend- and frontend developer.'
+        <span>
+          Maintained and developed new features for{' '}
+          <a href="https://www.entur.org/">Enturs sales- and ticket system.</a>
+          Where team lead for a team of aprox. 10 developers, and sat as both a
+          backend- and frontend developer.
+        </span>
       }
       labels={[
         'Javascript',
         'React',
+        'Redux',
         'CSS',
-        'Semantic',
+        'Semantic UI',
         'Webpack',
         'npm',
         'Java',
         'Hibernate',
-        'Ruby on rails',
         'Docker',
         'Spring boot',
         'gradle',
@@ -114,12 +126,21 @@ const Work = () => (
       ]}
     />
     <WorkItem
+      classname="page-break"
       header={'Knowit Objectnet AS'}
       link={'https://www.knowit.no/'}
       meta={'2015 - 2016'}
       metadescription={'Consultant / Software developer'}
       description={
-        'Maintain and develop new features for the Norwegian Rail Roads (NSB) sales- and ticket system. Linn sat mainly as a backend developer on the project. One of the responsibilities were to implement the integration between the sales- and ticketing system and third party payment APIs as Vipps, MobilePay and Mcash so that the NSB-app could have they as payment methods.'
+        <span>
+          Maintained and developed new features for the Norwegian Rail Roads (
+          <a href="https://www.vy.no/">former called NSB, and now VY</a>) sales-
+          and ticket system. Contributed mainly as a backend developer on the
+          project. One of the responsibilities were to implement the integration
+          between the sales- and ticketing system and third party payment APIs
+          as Vipps, MobilePay and Mcash so that the NSB-app could have they as
+          payment methods.
+        </span>
       }
       labels={[
         'Javascript',
@@ -141,7 +162,11 @@ const Work = () => (
       meta={'2014'}
       metadescription={'Summer intern - Developer'}
       description={
-        'Helped develop an administration web app for configuring tickets, trips and so on for the Norwegian Rail Road (NSB)'
+        <span>
+          Helped develop an administration web app for configuring tickets,
+          trips and so on for the Norwegian Rail Road (
+          <a href="https://www.vy.no/">NSB</a>)
+        </span>
       }
       labels={[
         'Javascript',
@@ -161,7 +186,10 @@ const Work = () => (
       meta={'2011 - 2014'}
       metadescription={'Summer intern - Developer and daily system operation'}
       description={
-        'Mainly helped employees with their daily computer problems in addition to daily operations'
+        <span>
+          Mainly helped employees with their daily computer problems in addition
+          to daily operations.
+        </span>
       }
       labels={['Java', 'PowerShell']}
     />

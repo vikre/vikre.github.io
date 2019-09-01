@@ -37,7 +37,7 @@ const Education = () => (
       header={'Dønski Videregående Skole'}
       link={'http://donski.no/'}
       meta={'2006 - 2009'}
-      description={'Alpine skiing'}
+      description={'Specialization in general studies / Alpine skiing'}
     />
   </Item.Group>
 );

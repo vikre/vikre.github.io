@@ -15,12 +15,6 @@ const ContactInfo = () => (
       <List animated link verticalAlign="middle">
         <List.Item
           as="a"
-          content="Twitter"
-          icon="twitter"
-          href="https://twitter.com/vikrel"
-        />
-        <List.Item
-          as="a"
           content="Github"
           icon="github"
           href="https://github.com/vikre"
@@ -30,6 +24,12 @@ const ContactInfo = () => (
           content="Linkedin"
           icon="linkedin"
           href="http://www.linkedin.com/in/vikre"
+        />
+        <List.Item
+          as="a"
+          content="Twitter"
+          icon="twitter"
+          href="https://twitter.com/vikrel"
         />
       </List>
     </List.Item>
