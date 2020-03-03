@@ -48,7 +48,7 @@ const Work = () => (
         <span>
           <a href="https://ordr.no/">Ordr</a>
           {' '}
-- A Startup which focus on how to make the resturant visit to a purely positive experience.
+          - a startup which focus on how to make the resturant visit to a purely positive experience.
           Both for they who works on the resturant and for the customers there.
         </span>
 )}
