@@ -1,5 +1,7 @@
 import React from 'react';
-import { List, Divider, Flag, Header, Icon, Label } from 'semantic-ui-react';
+import {
+  List, Divider, Flag, Header, Icon, Label,
+} from 'semantic-ui-react';
 import './App.css';
 
 const ContactInfo = () => (
@@ -79,7 +81,7 @@ const ContactInfo = () => (
 const Profile = () => (
   <nav>
     <h1>Linn Vikre</h1>
-    <Header as="h3" content={'Software developer'} icon="code" />
+    <Header as="h3" content="Software developer" icon="code" />
     <Divider hidden />
     <ContactInfo />
     <Divider hidden />
@@ -87,7 +89,7 @@ const Profile = () => (
       <i>References are provided on request</i>
     </span>
     <br />
-    <Label attached="bottom left">&copy; 2019 Linn Vikre</Label>
+    <Label attached="bottom left">&copy; 2020 Linn Vikre</Label>
   </nav>
 );
 

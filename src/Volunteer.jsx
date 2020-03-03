@@ -2,8 +2,10 @@ import React from 'react';
 import { Item, List } from 'semantic-ui-react';
 import './App.css';
 
-const VolunteerItem = ({ header, link, meta, subItems, className }) => (
-  <Item className={`ui items item-margin-left ${className ? className : ''}`}>
+const VolunteerItem = ({
+  header, link, meta, subItems, className,
+}) => (
+  <Item className={`ui items item-margin-left ${className || ''}`}>
     <Item.Content>
       <Item.Header as="a" href={link}>
         {header}
@@ -34,42 +36,42 @@ const Volunteer = () => (
       <span>Volunteer / other experience</span>
     </h2>
     <VolunteerItem
-      header={'Online'}
-      link={'https://online.ntnu.no'}
-      meta={'2011 - 2015'}
+      header="Online"
+      link="https://online.ntnu.no"
+      meta="2011 - 2015"
       subItems={[
         {
           title: 'Head (2014-2015)',
           description:
-            'Worked closely with the rest of the team to organize and run the organization. Also had the responsibility for HES (Health Environmental Safety)'
+            'Worked closely with the rest of the team to organize and run the organization. Also had the responsibility for HES (Health Environmental Safety)',
         },
         {
           title: 'Deputy head (2013-2014)',
           description:
-            'Worked closely with the rest of the team to organize and run the organization. Mostly communication and representation'
+            'Worked closely with the rest of the team to organize and run the organization. Mostly communication and representation',
         },
         {
           title: 'Head of the academic and courses commitee (2012 -2013)',
           description:
-            'Managing the team working with arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology'
+            'Managing the team working with arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology',
         },
         {
           title: 'Member of the academic and courses commitee (2011 - 2015)',
           description:
-            'Arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology'
-        }
+            'Arranging courses and workshops for the informatics students at the Norwegian University of Science and Technology',
+        },
       ]}
     />
     <VolunteerItem
-      header={'JavaZone'}
-      link={'https://javazone.no'}
-      meta={'2012 - 2013'}
+      header="JavaZone"
+      link="https://javazone.no"
+      meta="2012 - 2013"
       subItems={[
         {
           title: 'Volunteer @ pkom',
           description:
-            'JavaZone is organized by javaBin, the Norwegian Java User Group. The goal is to organize a community-driven conference for Java developers where they can learn new things, share knowledge, and socialize.'
-        }
+            'JavaZone is organized by javaBin, the Norwegian Java User Group. The goal is to organize a community-driven conference for Java developers where they can learn new things, share knowledge, and socialize.',
+        },
       ]}
       className="page-break"
     />
