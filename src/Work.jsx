@@ -40,22 +40,24 @@ const Work = () => (
       <span>Work</span>
     </h2>
     <WorkItem
-      header="Ordr AS"
-      link="https://www.ordr.no/"
+      header="Favrit AS (Former Ordr AS)"
+      link="https://www.favrit.com/"
       meta="March 2020 - now"
-      metadescription="Code monkey aka Senior Software developer"
+      metadescription="Techlead & Senior Software developer"
       description={(
         <span>
-          <a href="https://ordr.no/">Ordr</a>
+          <a href="https://favrit.com/">Favrit</a>
           {' '}
           - a startup which focus on how to make the resturant visit to a purely positive experience.
           Both for they who works on the resturant and for the customers there.
         </span>
 )}
       labels={[
+        'React',
+        'Next.js',
         'Javascript',
-        'Angular',
-        'Ngx',
+        'Tailwind css',
+        'Styled components',
         'Serverless',
         'Python',
         'Java',

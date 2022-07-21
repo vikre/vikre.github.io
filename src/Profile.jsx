@@ -89,7 +89,7 @@ const Profile = () => (
       <i>References are provided on request</i>
     </span>
     <br />
-    <Label attached="bottom left">&copy; 2020 Linn Vikre</Label>
+    <Label attached="bottom left">&copy; 2022 Linn Vikre</Label>
   </nav>
 );
 
