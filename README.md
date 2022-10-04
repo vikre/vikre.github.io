@@ -1,5 +1,5 @@
 # vikre.github.io
 =========
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Made with [vite](https://vitejs.dev/), [react](https://reactjs.org/) and [tailwindcss](https://tailwindcss.com/)
 

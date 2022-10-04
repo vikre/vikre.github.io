@@ -1,62 +1,64 @@
 import React from 'react';
-import { Item, Label } from 'semantic-ui-react';
-import './App.css';
+//import './App.css';
 
-const WorkItem = ({
-  header,
-  link,
-  meta,
-  metadescription,
-  description,
-  labels,
-  classname,
-}) => (
-  <Item className={`ui items item-margin-left ${classname || ''}`}>
-    <Item.Content>
-      <Item.Header as="a" href={link}>
-        {header}
-      </Item.Header>
-      <Item.Meta>
-        <span className="cinema">{meta}</span>
-        <br />
-        <span className="cinema">{metadescription}</span>
-      </Item.Meta>
-      <Item.Description>{description}</Item.Description>
-      <Item.Extra>
-        <Label.Group>
-          {labels
-            && labels.map((label, index) => (
-              <Label key={index} content={label} color="teal" />
+type WorkItemProps = {
+  header: string;
+  meta: string;
+  metadescription: string;
+  description: React.ReactNode;
+  labels?: string[];
+  link?: string;
+  classname?: string;
+};
+
+const WorkItem = ({ header, link, meta, metadescription, description, labels, classname }: WorkItemProps) => (
+  <div>
+    <h3 className="text-black font-semibold text-lg mt-4 mb-4">
+      <a href={link}>{header}</a>
+    </h3>
+    <div className="mb-4">
+      <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">{meta}</div>
+      <div className="lg:inline-block lg:w-8/12 w-full font-semibold">{metadescription}</div>
+    </div>
+    <div>
+      <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2"></div>
+      <div className="lg:inline-block lg:w-8/12 w-full">{description}</div>
+    </div>
+    <div className="mt-4">
+      <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">Tools:</div>
+      <div className="lg:inline-block lg:w-8/12 w-full">
+        <div className="flex flex-wrap">
+          {labels &&
+            labels.map((label, index) => (
+              <span key={index} className="rounded-xl bg-emerald-300 px-3 py-1 m-1">
+                {label}
+              </span>
             ))}
-        </Label.Group>
-      </Item.Extra>
-    </Item.Content>
-  </Item>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 
 const Work = () => (
-  <Item.Group>
-    <h2>
-      <span>Work</span>
-    </h2>
+  <div>
+    <h2 className="section-headline">Work</h2>
     <WorkItem
       header="Favrit AS (Former Ordr AS)"
       link="https://www.favrit.com/"
       meta="March 2020 - now"
       metadescription="Techlead & Senior Software developer"
-      description={(
+      description={
         <span>
-          <a href="https://favrit.com/">Favrit</a>
-          {' '}
-          - a startup which focus on how to make the resturant visit to a purely positive experience.
-          Both for they who works on the resturant and for the customers there.
+          <a href="https://favrit.com/">Favrit</a> - a startup which focus on how to make the resturant visit to a
+          purely positive experience. Both for they who works on the resturant and for the customers there.
         </span>
-)}
+      }
       labels={[
         'React',
         'Next.js',
         'Javascript',
-        'Tailwind css',
+        'Tailwindcss',
         'Styled components',
         'Serverless',
         'Python',
@@ -74,15 +76,13 @@ const Work = () => (
       link="https://www.knowit.no/"
       meta="2018 - March 2020"
       metadescription="Consultant / Team lead / Software developer"
-      description={(
+      description={
         <span>
-          <a href="https://digitallibrary.io/">Global digital library (GDL)</a>
-          {' '}
-          - a cooperation project between Norad and USAID with NDLA for
-          developing a platform to freely provide reading material in a large
-          number of languages for children.
+          <a href="https://digitallibrary.io/">Global digital library (GDL)</a> - a cooperation project between Norad
+          and USAID with NDLA for developing a platform to freely provide reading material in a large number of
+          languages for children.
         </span>
-)}
+      }
       labels={[
         'Javascript',
         'React',
@@ -120,15 +120,13 @@ const Work = () => (
       link="https://www.knowit.no/"
       meta="2016 - December 2018 & June 2019 - March 2020"
       metadescription="Consultant / Team lead / Software developer"
-      description={(
+      description={
         <span>
-          Maintained and developed new features for
-          {' '}
+          Maintained and developed new features for{' '}
           <a href="https://www.entur.org/">Enturs sales- and ticket system.</a>
-          Were team lead for a team of aprox. 10 developers, and sat as both a
-          backend- and frontend developer.
+          Were team lead for a team of aprox. 10 developers, and sat as both a backend- and frontend developer.
         </span>
-)}
+      }
       labels={[
         'Javascript',
         'React',
@@ -163,18 +161,15 @@ const Work = () => (
       link="https://www.knowit.no/"
       meta="2015 - 2016"
       metadescription="Consultant / Software developer"
-      description={(
+      description={
         <span>
           Maintained and developed new features for the Norwegian Rail Roads (
-          <a href="https://www.vy.no/">former called NSB, and now VY</a>
-) sales-
-          and ticket system. Contributed mainly as a backend developer on the
-          project. One of the responsibilities were to implement the integration
-          between the sales- and ticketing system and third party payment APIs
-          as Vipps, MobilePay and Mcash so that the NSB-app could have they as
-          payment methods.
+          <a href="https://www.vy.no/">former called NSB, and now VY</a>) sales- and ticket system. Contributed mainly
+          as a backend developer on the project. One of the responsibilities were to implement the integration between
+          the sales- and ticketing system and third party payment APIs as Vipps, MobilePay and Mcash so that the NSB-app
+          could have they as payment methods.
         </span>
-)}
+      }
       labels={[
         'Javascript',
         'CSS',
@@ -194,40 +189,25 @@ const Work = () => (
       link="https://www.knowit.no/"
       meta="2014"
       metadescription="Summer intern - Developer"
-      description={(
+      description={
         <span>
-          Helped develop an administration web app for configuring tickets,
-          trips and so on for the Norwegian Rail Road (
-          <a href="https://www.vy.no/">NSB</a>
-)
+          Helped develop an administration web app for configuring tickets, trips and so on for the Norwegian Rail Road
+          (<a href="https://www.vy.no/">NSB</a>)
         </span>
-)}
-      labels={[
-        'Javascript',
-        'backbone.js',
-        'CSS',
-        'Java',
-        'Spring boot',
-        'Hibernate',
-        'maven',
-        'git',
-        'oracle',
-      ]}
+      }
+      labels={['Javascript', 'backbone.js', 'CSS', 'Java', 'Spring boot', 'Hibernate', 'maven', 'git', 'oracle']}
     />
     <WorkItem
       header="ODIN Forvalting AS"
       link="https://odinfond.no/"
       meta="2011 - 2014"
       metadescription="Summer intern - Developer and daily system operation"
-      description={(
-        <span>
-          Mainly helped employees with their daily computer problems in addition
-          to daily operations.
-        </span>
-)}
+      description={
+        <span>Mainly helped employees with their daily computer problems in addition to daily operations.</span>
+      }
       labels={['Java', 'PowerShell']}
     />
-  </Item.Group>
+  </div>
 );
 
 export default Work;

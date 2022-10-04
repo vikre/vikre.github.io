@@ -1,40 +1,45 @@
 import React from 'react';
-import { Item, List } from 'semantic-ui-react';
-import './App.css';
 
-const VolunteerItem = ({
-  header, link, meta, subItems, className,
-}) => (
-  <Item className={`ui items item-margin-left ${className || ''}`}>
-    <Item.Content>
-      <Item.Header as="a" href={link}>
-        {header}
-      </Item.Header>
-      <Item.Meta>
-        <span className="cinema">{meta}</span>
-      </Item.Meta>
-      <Item.Description>
-        {subItems && (
-          <List relaxed="very">
-            {subItems.map((item, index) => (
-              <List.Item
-                key={index}
-                header={item.title}
-                content={item.description}
-              />
-            ))}
-          </List>
-        )}
-      </Item.Description>
-    </Item.Content>
-  </Item>
+type SubItemsProps = {
+  title: string;
+  description: string;
+};
+
+type VolunteerItemProps = {
+  header: string;
+  meta: string;
+  link: string;
+  subItems: SubItemsProps[];
+  className?: string;
+};
+
+const VolunteerItem = ({ header, link, meta, subItems, className }: VolunteerItemProps) => (
+  <div>
+    <h3 className="text-black font-semibold text-lg mt-4 mb-4">
+      <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+        <a href={link}>{header}</a>
+      </div>
+      <div className="lg:inline-block lg:w-8/12 w-full">{meta}</div>
+    </h3>
+
+    <div>
+      {subItems && (
+        <>
+          {subItems.map((item, index) => (
+            <div key={index} className="mb-4">
+              <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 mr-4 font-medium">{item.title}</div>
+              <div className="lg:inline-block lg:w-8/12 w-full">{item.description}</div>
+            </div>
+          ))}
+        </>
+      )}
+    </div>
+  </div>
 );
 
 const Volunteer = () => (
-  <Item.Group>
-    <h2>
-      <span>Volunteer / other experience</span>
-    </h2>
+  <div>
+    <h2 className="section-headline">Work Volunteer / other experience</h2>
     <VolunteerItem
       header="Online"
       link="https://online.ntnu.no"
@@ -75,7 +80,7 @@ const Volunteer = () => (
       ]}
       className="page-break"
     />
-  </Item.Group>
+  </div>
 );
 
 export default Volunteer;

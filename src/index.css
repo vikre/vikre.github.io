@@ -1,5 +1,17 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-headline {
+  --tw-border-opacity: 1;
+  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-left-width: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+.section-headline {
+  color: #10b981 !important;
 }
