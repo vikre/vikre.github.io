@@ -35,9 +35,29 @@ const Education = () => (
       meta="2010 - 2015"
       description="Master in Computer Science"
       extra={
-        <a className="links hover:underline" href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2353650">
-          Master thesis: Online News Detection on Twitter
-        </a>
+        <ul className="list-disc list-inside">
+          <li>
+            <a className="links hover:underline" href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2353650">
+              Master thesis: Online News Detection on Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              className="links hover:underline"
+              href="http://www.polibits.gelbukh.com/2017_55/Hybrid%20Entity%20Driven%20News%20Detection%20on%20Twitter.pdf"
+            >
+              Paper publication: Hybrid Entity Driven News Detection on Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              className="links hover:underline"
+              href="https://www.scitepress.org/PublishedPapers/2016/58019/pdf/index.html"
+            >
+              Paper publication: Twitter Topic Modeling for Breaking News Detection
+            </a>
+          </li>
+        </ul>
       }
     />
     <EducationItem

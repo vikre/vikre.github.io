@@ -1,4 +1,3 @@
-import React from 'react';
 import { codeIcon, github, linkedin, twitter } from './assets';
 
 const ContactInfo = () => (
@@ -57,7 +56,7 @@ const Profile = () => (
       <span>
         <i className="text-sm text-gray-400">References are provided on request</i>
       </span>
-      <p className="text-sm text-gray-400 my-2">&copy; 2022 Linn Vikre</p>
+      <p className="text-sm text-gray-400 my-2">&copy; {new Date().getFullYear()} Linn Vikre</p>
     </div>
   </>
 );

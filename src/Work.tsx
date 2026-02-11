@@ -1,5 +1,4 @@
 import React from 'react';
-//import './App.css';
 
 type WorkItemProps = {
   header: string;
@@ -44,9 +43,40 @@ const Work = () => (
   <div>
     <h2 className="section-headline">Work</h2>
     <WorkItem
+      header="Tripletex AS"
+      link="https://www.tripletex.no/"
+      meta="March 2023 - now"
+      metadescription="Senior Software developer"
+      description={
+        <span>
+          <a href="https://tripletex.no/">Tripletex</a> - a company focused on providing comprehensive accounting and
+          payroll solutions for businesses.
+        </span>
+      }
+      labels={[
+        'React',
+        'Javascript',
+        'Typescript',
+        'Tailwindcss',
+        'Java',
+        'JSP',
+        'Spring',
+        'Redis',
+        'Kibana',
+        'Github actions',
+        'Jenkins',
+        'Docker',
+        'npm',
+        'pnpm',
+        'Swagger',
+        'MySQL',
+        'AWS',
+      ]}
+    />
+    <WorkItem
       header="Favrit AS (Former Ordr AS)"
       link="https://www.favrit.com/"
-      meta="March 2020 - now"
+      meta="March 2020 - February 2023"
       metadescription="Techlead & Senior Software developer"
       description={
         <span>
